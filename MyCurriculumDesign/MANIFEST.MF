@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: lib/commons-beanutils.jar lib/commons-dbutils-1.3.jar lib/commons-logging-1.1.1.jar lib/mysql-connector-java-5.1.7-bin.jar 
+Main-Class: MyGUI.LoginUI

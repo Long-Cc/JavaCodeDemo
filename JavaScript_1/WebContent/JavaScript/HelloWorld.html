@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type"content="text/http;charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//window.onload事件在整个HTML文档被完全加载后出发执行。
+	//所以在其中可以获取到HTML文档的任何元素 
+	window.onload=function(){
+		// 1\
+		var liNodes=document.getElementsByTagName("li");
+		alert(liNodes.length);
+		// 2\
+		var cityNode=document.getElementById("city");
+		var cityLiNodes=cityNode.getElementsByTagName("li");
+		alert(cityLiNodes.length);
+		
+		var genderNodes=document.getElementsByName("gender");
+		alert(genderNodes.length);
+		
+		var bjNode2=document.getElementsByName("BeiJing");
+		alert(bjNode2.length);
+	};
+</script>
+</head>
+<body>
+	<p>你喜欢哪个城市?</p>
+	<ul id="city">
+		<li id="bj" name="BeiJing">北京</li>	
+		<li>上海</li>
+		<li>广州</li>
+		<li>首尔</li>
+	</ul>
+	
+	<br><br>
+	<p>你喜欢哪单机游戏?</p>
+	<ul id="game">
+		<li id="rl">红警</li>	
+		<li>实况</li>
+		<li>魔兽</li>
+		<li>飞车</li>
+	</ul>
+	<br><br>
+	gender:
+		<input type="radio" name="gender" value="male" />Male
+		<input type="radio" name="gender" value="female" />Female
+	
+</body>
+</html>

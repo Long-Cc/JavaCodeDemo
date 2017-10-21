@@ -1,0 +1,24 @@
+<c3p0-config>
+	<named-config name="helloc3p0">
+		
+		<!-- 指定数据源的基本属性 -->
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql:///mydata</property>
+		
+		<!-- 若数据库中连接不足时，一次向 数据服务器申请多少个连接-->
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">100</property>
+		<property name="minPoolSize">5</property>
+		<property name="maxPoolSize">100</property>
+		<property name="maxPoolSize">10</property>
+		
+		<!-- C3P0数据连接池可以维护的Statement的个数 -->
+		<property name="maxStatements">20</property>
+		<!-- 每个连接同时可以使用的Statement的对象的个数 -->
+		<property name="maxStatementsPerConnection">5</property>
+	
+	</named-config>
+	
+</c3p0-config>
